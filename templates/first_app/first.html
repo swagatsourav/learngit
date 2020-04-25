@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>This is my first application in Django</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+  </head>
+
+
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Hello,{{ name_insert }}</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="m-y-md">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <div id="getlist">
+          {{unordered_list}}
+        </div>
+
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+
+        <a href="{% static "webpages/second.html" %}">Click here to go to second</a>
+        <img src="{% static "images/bg-01.jpg" %}" alt="no image">
+      </div>
+
+    </div>
+
+    <script>
+      // function changeColors() {
+      //   if (this.style.color == "cyan")
+      //     this.style.color = "black";
+      //   else {
+      //     this.style.color = "cyan";
+      //   }
+      //   alert(this.id);
+      // }
+
+      var var1 = document.getElementsByClassName('items');
+      document.querySelector("#getlist").innerHTML=document.querySelector("#getlist").innerText;
+
+      // for (var i of var1) {
+      //
+      //   i.addEventListener('click', changeColors)
+      //
+      // }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>
