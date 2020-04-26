@@ -8,7 +8,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_project.settings')
 django.setup()
 fake = Faker()
 
-
 def populate_Data(n=5):
     for i in range(n):
         # user_id = models.AutoField(primary_key=True)
