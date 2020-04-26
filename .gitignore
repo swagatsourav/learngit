@@ -1,4 +1,9 @@
 myfile.txt
 *.log
 #Below line will ignore all the test_dir folder found anywhere inside the git repo.
-/test_dir
+#  /test_dir
+
+#Below line will only ignore test_dir folder found in root level
+/test_dir/
+
+
