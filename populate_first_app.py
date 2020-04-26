@@ -3,6 +3,7 @@ from faker import Faker
 import random
 import django
 import os
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_project.settings')
 django.setup()
 fake = Faker()
