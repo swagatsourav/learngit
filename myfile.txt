@@ -19,4 +19,6 @@ akswjss
 mklwlkjhsjhwjds
 
 This line is commited in master
-This is also commited to master but in atom
+This is also commited to master but changed in git.
+
+hello this line is from git
